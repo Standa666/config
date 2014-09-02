@@ -1,0 +1,24 @@
+[user]
+	name = Jan Stanicek
+	email = jan.stanicek@oracle.com
+[branch "master"]
+[branch]
+[alias]
+	last = log -1 HEAD
+	graph = log --graph --format='%C(yellow)%h%Cred%d %C(cyan)%an %Cgreen%ad %Creset%s' --date=short --color=always -10
+	remove-proxy = "!git config --global --unset http.proxy && git config --global --unset https.proxy"
+	add-proxy = "!git config --global http.proxy 'www-proxy.us.oracle.com:80' && git config --global https.proxy 'www-proxy.us.oracle.com:80'"
+	add-proxy-uk = "!git config --global http.proxy 'www-proxy-ukc1.uk.oracle.com:80' && git config --global https.proxy 'www-proxy-ukc1.uk.oracle.com:80'"
+[credential]
+	helper = cache --timeout 14400
+[grep]
+	lineNumber = true
+	extendedRegexp = true
+[color]
+	ui = true
+[core]
+	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
+[http]
+	proxy = www-proxy-ukc1.uk.oracle.com:80
+[https]
+	proxy = www-proxy-ukc1.uk.oracle.com:80
